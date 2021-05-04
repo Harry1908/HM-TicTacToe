@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content ="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" media = "screen" href = "css/style.css">
+    <link rel ="stylesheet" href = "css/_bootstrap.css">     
+    <title>Tic Tac Toe</title>
+    <script src = "js/_bootstrap.js" async></script>
+    <script src = "js/Final script.js" defer></script>
+ 
+</head>
+
+<body>
+    <div id=main>
+    <h1>Tic-Tac-Toe</h1>
+
+        <div class="tic-tac-toe">
+        <p id="hint">Zum Spielen bitte abwechselnd in die Spielfelder klicken/tappen!</p>
+    
+            <!-- declare the onclick function in HTML to trigger when the user clicks onto a child button-->
+            <div id="gameboard" onclick= "markField (event);">
+
+            <!-- aria labels="" is necessaryto reset the button labels on reloading the page. -->
+                <button aria-label="">A1</button>
+                <button aria-label="">A2</button>
+                <button aria-label="">A3</button>
+
+                <button aria-label="">B1</button>
+                <button aria-label="">B2</button>
+                <button aria-label="">B3</button>
+
+                <button aria-label="">C1</button>
+                <button aria-label="">C2</button>
+                <button aria-label="">C3</button>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+
+</body>
+
+</html>
